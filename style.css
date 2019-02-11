@@ -76,11 +76,11 @@ a{
 }
 
 .img6, .img9 {
-    grid-row: 1/ span 3;
+    grid-row: 3/ span 2;
 }
 
 .img3, .img8 {
-    grid-column: 1/ span 3;
+    grid-column: 1/ span 2;
 }
 
 .box{
@@ -141,9 +141,20 @@ input[type=text], input[type=email], select, textarea {
 
 
 @media only screen and (max-width: 700px) {
-    .img3, .img6, .img8, .img9{
+    .img3{
         grid-column: 1/1;
     } 
+    .img8{
+        grid-column: 1/1;
+    }
+    .img6 {
+        grid-column: 1/1;
+        grid-row: auto;
+    } 
+    .img9{
+        grid-column: 1/1;
+        grid-row: auto;
+    }
 }
 
 @media only screen and (max-width: 600px){
