@@ -1,0 +1,156 @@
+body{
+    margin: auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(43, 41, 41, 0.13);
+}
+
+.zone {
+    cursor:pointer;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    color: rgb(12, 15, 13);
+}
+
+.zone:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*NAV*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.main-nav{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    background-color: rgba(43, 41, 41, 0.596);
+}
+
+.push{
+    margin-left: auto;
+}
+
+li{
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+/*COVER*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.welcome {
+    font-size: 90%;
+}
+
+/*GRID*/
+.grid-wrapper{
+    display: grid;
+    grid-gap: 15px;
+    justify-content: center;
+    grid-template-columns: auto;
+}
+
+.box > img {
+    width: 100%;
+    height: auto;
+}
+
+.box > p {
+    font-size: 0.8rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img6, .img9 {
+    grid-row: 1/ span 3;
+}
+
+.img3, .img8 {
+    grid-column: 1/ span 3;
+}
+
+.box{
+    background-color: #444;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*FOOTER*/
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(68, 68, 68, 0.527);
+}
+
+/*CONTACT*/
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #444;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+/*SMALL SCREEN*/ 
+@media only screen and (max-width: 800px){
+    .zone{
+        font-size: 1em;
+    }
+
+    p.box > p {
+        display: none
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .img3, .img6, .img8, .img9{
+        grid-column: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-nav{
+        padding: 0;
+    }
+    a{
+        font-size: 1.3em;
+    }
+}
